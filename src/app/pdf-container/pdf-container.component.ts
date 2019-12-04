@@ -6,13 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./pdf-container.component.css']
 })
 export class PdfContainerComponent implements OnInit {
-  private pdfSource = 'C:/personal/first-profile-attempt/src/static/resume.pdf';
+  public pdfSource = '/src/static/resume.pdf';
   constructor() { }
 
   ngOnInit() {
-  }
-
-  onFileSelected() {
     const $img: any = document.querySelector('#file');
 
     if (typeof (FileReader) !== 'undefined') {

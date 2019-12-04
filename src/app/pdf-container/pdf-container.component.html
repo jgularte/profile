@@ -1,1 +1,6 @@
-<input (change)="onFileSelected()" type="file" id="file">
+<div>
+  <pdf-viewer [src]="pdfSource" [render-text]="true"
+              [page]="page" [show-all]="true"
+              style="display: block;">
+  </pdf-viewer>
+</div>
